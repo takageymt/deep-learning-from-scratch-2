@@ -315,7 +315,7 @@ class TimeLSTM:
 
         return dxs
 
-    def set_state(self, h):
+    def set_state(self, h, c=None):
         self.h, self.c = h, c
 
     def reset_state(self):
